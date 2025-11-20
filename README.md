@@ -1,5 +1,5 @@
 # NSUnetwork
-成都东软学院校园网自动连接/防止断连/开机自动连接校园网
+## 成都东软学院校园网自动连接/防止断连/开机自动连接校园网
 
 # 使用方法
 1. 运行程序（最好是带控制台版本的）
@@ -14,7 +14,9 @@
 
 # 配置文件中的参数：
 可以自定义一些参数，初次连接需要填写账号信息（学号、一次性密钥）
+
 配置文件↓参数 说明
+
 ```json
 {
     "username" : "学号",             #填写自己登录校园网的学号
@@ -31,9 +33,10 @@
 
 # 如何开机自动联网
 可以把程序放在`%UserProfile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`文件夹里面或者设置计划任务以达到开机自启动
+
 建议使用` nsunetowrk_NO-console.exe `进行开机自启动，这样会在后台运行
 
-# 连接主逻辑
+# 运行主逻辑
 ```py
 while 1:
     if exitFlag == True:
